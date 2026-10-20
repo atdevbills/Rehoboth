@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#9E1519">
+  <meta name="description" content="Welcome to Rehoboth Baptist Church, House of Testimonies, Accra.">
+  <title>Rehoboth Baptist Church | Kweiman</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="rehobothlogo.webp" type="image/png">
+</head>
+
+<body>
+  <header class="site-header" id="site-header">
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Rehoboth Baptist Church home">
+        <img id="logo" src="rehobothlogo.webp"
+             alt="Rehoboth Baptist Church, House of Testimonies, Accra">
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="site-nav"
+              aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#meetings">Meetings</a></li>
+          <li><a class="nav-link" href="#pastor">Our Pastor</a></li>
+          <li><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link" href="#socials">Follow Us</a></li>
+          <li><a class="nav-link nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- NEXT SERVICE COUNTDOWN -->
+    <section class="next-service" id="next-service" aria-label="Next church service">
+      <div class="next-inner">
+        <div class="next-info">
+          <p class="next-label" id="next-label">
+            <span class="live-dot" id="live-dot" aria-hidden="true"></span>
+            <span id="next-status">NEXT SERVICE</span>
+          </p>
+          <p class="next-name" id="next-name">Loading...</p>
+          <p class="next-when" id="next-when"></p>
+        </div>
+
+        <div class="countdown" id="countdown" role="timer" aria-live="off">
+          <div class="count-box"><span class="count-num" id="cd-days">00</span><span class="count-unit">Days</span></div>
+          <div class="count-box"><span class="count-num" id="cd-hours">00</span><span class="count-unit">Hrs</span></div>
+          <div class="count-box"><span class="count-num" id="cd-mins">00</span><span class="count-unit">Min</span></div>
+          <div class="count-box"><span class="count-num" id="cd-secs">00</span><span class="count-unit">Sec</span></div>
+        </div>
+
+        <div class="next-actions">
+          <a class="next-btn"
+             href="https://www.google.com/maps/search/?api=1&query=Rehoboth+Baptist+Church+Kweiman+Accra+Ghana"
+             target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Directions
+          </a>
+          <button class="next-btn" id="add-calendar-btn" type="button">
+            <i class="fa-regular fa-calendar-plus" aria-hidden="true"></i> Add to Calendar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">REHOBOTH BAPTIST CHURCH · ACCRA</p>
+        <h1>A place of faith, hope and fellowship.</h1>
+        <p>
+          Welcome to our church community.
+          Join us as we gather to worship, learn from God's Word,
+          and grow together in faith.
+        </p>
+        <a class="primary-button" href="#meetings">
+          Join Us for a Service
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-wrap" id="about">
+      <p class="section-label">WHO WE ARE</p>
+      <h2>Welcome to Rehoboth</h2>
+      <p class="about-text">
+        Rehoboth Baptist Church, known as the House of Testimonies, is a
+        welcoming community in Kweiman, Accra. We gather to worship God,
+        learn from His Word, and grow together in faith and fellowship.
+      </p>
+      <p class="about-text">
+        Whether you are new to the area or looking for a church family,
+        we invite you to join us at any of our weekly meetings.
+      </p>
+
+      <button class="secondary-button speak-btn" id="speak-btn"
+              type="button" aria-pressed="false">
+        <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+        <span id="speak-label">Speak</span>
+      </button>
+      <audio id="about-audio" src="about.mp3" preload="none"></audio>
+    </section>
+
+    <!-- MEETING TIMES -->
+    <section class="meetings" id="meetings">
+      <div class="section-wrap">
+        <p class="section-label">PLAN YOUR VISIT</p>
+        <h2>Our Meeting Times</h2>
+        <p class="section-intro">
+          We look forward to gathering with you.
+        </p>
+
+        <div class="meeting-grid">
+          <article class="meeting-card">
+            <div class="meeting-icon" aria-hidden="true"><i class="fa-solid fa-church"></i></div>
+            <h3>Sunday</h3>
+            <ul class="meeting-list">
+              <li>
+                <span class="meeting-name">Bible Study</span>
+                <span class="meeting-time">8:00 AM – 9:00 AM</span>
+              </li>
+              <li>
+                <span class="meeting-name">Worship Service</span>
+                <span class="meeting-time">9:00 AM – 12:00 PM</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="meeting-card">
+            <div class="meeting-icon" aria-hidden="true"><i class="fa-solid fa-book-bible"></i></div>
+            <h3>Wednesday</h3>
+            <ul class="meeting-list">
+              <li>
+                <span class="meeting-name">Teaching Service</span>
+                <span class="meeting-time">6:30 PM – 8:00 PM</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="meeting-card">
+            <div class="meeting-icon" aria-hidden="true"><i class="fa-solid fa-hands-praying"></i></div>
+            <h3>Friday</h3>
+            <ul class="meeting-list">
+              <li>
+                <span class="meeting-name">Prayer Service</span>
+                <span class="meeting-time">6:30 PM – 8:00 PM</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="meeting-card">
+            <div class="meeting-icon" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h3>Saturday</h3>
+            <ul class="meeting-list">
+              <li>
+                <span class="meeting-name">Evangelism, Visitation &amp; Follow up</span>
+                <span class="meeting-time">3:00 PM – 6:00 PM</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PASTOR -->
+    <section class="pastor section-wrap" id="pastor">
+      <div class="pastor-card">
+        <img class="pastor-photo" src="pastor.jpg"
+             alt="REV. EMMANUEL ASIEDU-APPIAH">
+        <div class="pastor-info">
+          <p class="section-label" id="section-label">MEET OUR PASTOR</p>
+          <h2 class="pastor-name">rev. emmanuel asiedu-appiah</h2>
+          <p class="pastor-bio">
+            Rev. Emmanuel Asiedu-Appiah is a prominent Ghanaian minister and the Head Pastor of the Rehoboth Baptist Church located in Kweiman, Accra. He is widely recognized for his radio ministry, relationship counseling, and strong digital presence through podcasted sermons.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHURCH GALLERY -->
+    <section class="gallery section-wrap" id="gallery"
+             aria-labelledby="gallery-title">
+      <p class="section-label">LIFE AT REHOBOTH</p>
+      <h2 id="gallery-title">Our Church Family</h2>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="church1.jpg" loading="lazy"
+               alt="Rehoboth Baptist Church photo 1">
+        </figure>
+        <figure class="gallery-item">
+          <img src="church2.jpg" loading="lazy"
+               alt="Rehoboth Baptist Church photo 2">
+        </figure>
+        <figure class="gallery-item">
+          <img src="church3.jpg" loading="lazy"
+               alt="Rehoboth Baptist Church photo 3">
+        </figure>
+      </div>
+    </section>
+
+    <!-- RANDOM BIBLE VERSE -->
+    <section class="verse-section" id="verse-section"
+             aria-labelledby="verse-title">
+      <div class="verse-card">
+        <p class="section-label">✦ A MOMENT IN THE WORD ✦</p>
+
+        <h2 id="verse-title">Bible Verse of the Moment</h2>
+
+        <div class="verse-content" aria-live="polite">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <p id="verse-text">Loading your Bible verse...</p>
+          <p id="verse-reference"></p>
+        </div>
+
+        <div class="verse-actions">
+          <button class="primary-button" id="new-verse-btn" type="button">
+            <span aria-hidden="true">↻</span>
+            Show Another Verse
+          </button>
+
+          <button class="secondary-button" id="share-verse-btn" type="button">
+            <span aria-hidden="true">↗</span>
+            Share Verse
+          </button>
+        </div>
+
+        <p id="share-status" class="share-status"
+           role="status" aria-live="polite"></p>
+
+        <p class="verse-footer">
+          Take a moment to reflect on God's Word.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section class="socials" id="socials">
+      <div class="section-wrap">
+        <p class="section-label">STAY CONNECTED</p>
+        <h2>Follow Us Online</h2>
+        <p class="section-intro">
+          Find our sermons, updates and announcements on social media.
+        </p>
+
+        <div class="social-links">
+          <a class="social-link" href="https://www.instagram.com/rehobothbaptistgh"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Follow us on Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a class="social-link" href="https://x.com/Rehobothgh_"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Follow us on X">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            <span>X</span>
+          </a>
+
+          <a class="social-link" href="https://youtube.com/@rehobothbaptistgh"
+             target="_blank" rel="noopener noreferrer" 
+             aria-label="Follow us on YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-wrap contact-layout">
+
+        <div class="contact-intro">
+          <p class="section-label">GET IN TOUCH</p>
+          <h2 id="contact-title">We'd Love to Welcome You</h2>
+          <p class="contact-text">
+            Join us at one of our weekly meetings.
+            We look forward to seeing you.
+          </p>
+
+          <div class="contact-actions">
+            <a class="primary-button"
+               href="https://www.google.com/maps/search/?api=1&query=Rehoboth+Baptist+Church+Kweiman+Accra+Ghana"
+               target="_blank" rel="noopener noreferrer">
+              Get Directions
+            </a>
+            <a class="secondary-button" href="tel:0244197595">Call Us</a>
+          </div>
+        </div>
+
+        <dl class="contact-list">
+          <div class="contact-row">
+            <dt>Visit</dt>
+            <dd>
+              Rehoboth Baptist Church
+              <span class="contact-sub">House of Testimonies &middot; Kweiman, Accra, Ghana</span>
+              <span class="contact-sub">Digital Address: GM-225-9827</span>
+            </dd>
+          </div>
+
+          <div class="contact-row">
+            <dt>Call</dt>
+            <dd>
+              <a href="tel:0244197595">0244 197595</a><br>
+              <a href="tel:0206360106">0206 360106</a>
+            </dd>
+          </div>
+
+          <div class="contact-row">
+            <dt>Email</dt>
+            <dd><a href="mailto:rbcoyarifa@gmail.com">rbcoyarifa@gmail.com</a></dd>
+          </div>
+        </dl>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Rehoboth Baptist Church · House of Testimonies</p>
+    <p>Accra, Ghana</p>
+    <p class="copyright">
+      &copy; <span id="current-year"></span> Rehoboth Baptist Church
+    </p>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button"
+          aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
